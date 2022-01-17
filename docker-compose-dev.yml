@@ -1,6 +1,6 @@
 version: '3'
 services:
-  frontend-app:
+  app:
     restart: always
     build:
       context: .
@@ -10,7 +10,7 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
-  frontend-test:
+  test:
     restart: always
     build:
       context: .
